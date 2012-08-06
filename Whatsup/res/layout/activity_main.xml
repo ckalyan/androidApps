@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/hoursText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timePeriodTextView"
+        android:ems="10"
+        android:inputType="number|time" />
+
+    <TextView
+        android:id="@+id/hoursView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hoursText"
+        android:layout_toRightOf="@+id/hoursText"
+        android:text="@string/hours"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/minutesText"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/hoursView"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/hoursView"
+        android:ems="10"
+        android:inputType="number|time" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/timePeriodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/reminderPeriod"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/minutesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/minutesText"
+        android:layout_toRightOf="@+id/minutesText"
+        android:text="@string/minutes"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/setTimeButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/minutesText"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/timePeriodTextView"
+        android:layout_marginRight="25dp"
+        android:onClick="SetButtonOnClick"
+        android:text="@string/set" />
+
+</RelativeLayout>

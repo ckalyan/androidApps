@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Whatsup</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="reminderPeriod">Time period between pings</string>
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="set">Set</string>
+
+</resources>
